@@ -1,24 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import Create from './components/create/create'
+import Read from './components/read/read'
+import Update from './components/update/update';
+
 
 function App() {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="main">
+      <div>
+        <h3>Todo List</h3>
+      </div>
+      <div>
+        <Create />
+      </div>
+      <div style={{ marginTop: 30 }}>
+        <Read />
+      </div>
+
+      <div><Update /></div>
+
     </div>
+
   );
 }
 
